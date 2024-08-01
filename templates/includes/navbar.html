@@ -1,0 +1,56 @@
+{% load static %}
+
+<nav class="zq_header-area">
+    <div class="container container-custom-1">
+        <div class="row align-items-center">
+            <div class="col-xxl-9 col-lg-8 col-sm-6 col-8">
+                <div class="zq_header-left">
+                    <div class="zq_header-logo">
+                        <a href="{% url 'home' %}"><img src="{% static 'images/logo/fizyo.png' %}" alt=""></a>
+                    </div>
+                    <div class="zq_header-menu">
+                        <nav id="mobile-menu">
+                            <ul>
+                                <li class="menu-has-child">
+                                    <a class="nav-link" href="{% url 'home' %}">Anasayfa</a>
+                                </li>
+                                <li class="menu-has-child">
+                                    <a class="nav-link" href="#">Egzersiz</a>
+                                    <ul class="submenu">
+                                        <li><a class="nav-link" href="{% url 'boyun' %}">Boyun</a></li>
+                                        <li><a class="nav-link" href="{% url 'omuz' %}">Omuz</a></li>
+                                        <li><a class="nav-link" href="{% url 'sırt' %}">Sırt</a></li>
+                                        <li><a class="nav-link" href="{% url 'bel' %}">Bel</a></li>
+                                        <li><a class="nav-link" href="{% url 'el_ve_el_bilegi' %}">El ve el bileği</a></li>
+                                        <li><a class="nav-link" href="{% url 'kalca' %}">Kalça</a></li>
+                                        <li><a class="nav-link" href="{% url 'ayak' %}">Ayak</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-has-child">
+                                    <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-lg-4 col-sm-6 col-4 d-flex justify-content-end">
+                <div class="zq_header-right">
+                    <a href="{% url 'contact' %}" class="zq_header-btn nav-link">İletişim
+                        <svg width="11" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.57971 10.1668L9.55073 1.8335M9.55073 1.8335H2.37681M9.55073 1.8335V9.33349"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <span class="zq_header-menuIcon zq_menuIcon d-lg-none d-block"><i class="fa-light fa-grid-2"></i></span>
+                    <span class="zq_header-action-shape">
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                            <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                                  fill="currentColor"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

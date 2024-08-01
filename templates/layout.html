@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="html template">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Asad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}template{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <!-- Cursor Animation -->
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <!-- Include Header -->
+    {% include "includes/navbar.html" %}
+    
+    <div class="has-smooth" id="has_smooth"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="body-wrapper pt-30">
+                <main>
+                    <!-- hero area start -->
+                    <section class="zq_hero-area">
+                        <div class="container container-custom-1">
+                            <div class="zq_hero-container">
+                                <div class="zq_hero-wrap">
+                                    <div class="zq_hero-content">
+                                        <h1 class="zq_hero-content-title">
+                                            Fizyo<span>Egzersiz</span> 
+                                        </h1>
+                                        <p>Innovative agency blending art and technology to craft digital 
+                                            <br> experiences that captivate and inspire audiences.</p>
+                                    </div>
+                                    <div class="zq_hero-img">
+                                        <img src="{% static 'img/fzt2.png' %}" alt="">
+                                    </div>
+                                    <div class="zq_hero-circle-btn">
+                                        <img src="{% static 'images/bg/h1_circle.png' %}" alt="">
+                                        <a href="#">
+                                            <svg width="28" height="30" viewBox="0 0 28 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_129_42)">
+                                                    <path
+                                                        d="M13.8922 10.568C17.1308 7.32937 20.2842 4.17596 23.4376 1.02255C24.1195 0.34073 24.8013 -0.170634 25.824 0.0850478C27.6138 0.425957 28.2956 2.55664 27.0172 3.92028C25.3979 5.62482 23.7786 7.15891 22.1592 8.77823C20.0286 10.9089 17.9831 13.0396 15.8524 15.085C14.4888 16.4487 13.3808 16.4487 12.0172 15.085C8.35242 11.4203 4.60242 7.7555 0.937644 4.0055C-0.17031 2.89755 -0.255538 1.53391 0.76719 0.596411C1.78992 -0.341089 3.06833 -0.341089 4.17628 0.852093C7.07401 3.83505 10.057 6.818 13.0399 9.80096C13.2104 10.0566 13.5513 10.2271 13.8922 10.568Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M13.7217 24.5454C16.9603 21.3068 20.0285 18.2386 23.0115 15.1704C23.3524 14.8295 23.608 14.5738 23.949 14.3181C24.8865 13.6363 26.0796 13.7215 26.8467 14.5738C27.699 15.4261 27.7842 16.534 27.1024 17.4715C26.9319 17.7272 26.6762 17.9829 26.4205 18.1534C22.841 21.7329 19.2615 25.3124 15.7671 28.8068C14.3183 30.2556 13.2103 30.2556 11.7615 28.8068C8.18191 25.2272 4.51714 21.5624 0.937591 17.9829C0.255773 17.3011 -0.255591 16.534 0.0853179 15.5113C0.596682 13.7215 2.64214 13.2954 4.00577 14.659C6.98873 17.5568 9.88645 20.5397 12.8694 23.5227C13.2103 23.7784 13.3808 24.1193 13.7217 24.5454Z"
+                                                        fill="currentColor" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- hero area end -->
+                    {% block body %}
+                    {% endblock %}
+                </main>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery Js -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
+    <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/SplitText.min.js' %}"></script>
+    <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
